@@ -28,7 +28,7 @@ public class SmoothingDriver {
 		// TODO: specify input and output DIRECTORIES
 		FileInputFormat.setInputPaths(job, new Path(
 				"/home/pruebahadoop/Documentos/DataSets/monitores/CloseGaps/part-r-00000"));
-		FileOutputFormat.setOutputPath(job, new Path("/home/pruebahadoop/Documentos/DataSets/monitores/Smoothing"));
+		FileOutputFormat.setOutputPath(job, new Path("/home/pruebahadoop/Documentos/DataSets/monitores/SmoothingGaussian"));
 
 		if (!job.waitForCompletion(true))
 			return;
